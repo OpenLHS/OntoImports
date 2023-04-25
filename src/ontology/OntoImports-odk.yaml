@@ -16,4 +16,7 @@ import_group:
     - id: ro
     - id: obi
     - id: iao
+robot_report:
+  custom_sparql_exports:
+    - base-classes-report
 robot_java_args: "-Xmx8G"
