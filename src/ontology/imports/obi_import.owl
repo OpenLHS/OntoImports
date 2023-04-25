@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/OntoImports/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/OntoImports/releases/2023-04-24/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/OntoImports/releases/2023-04-25/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl>)
-Annotation(owl:versionInfo "2023-04-24")
+Annotation(owl:versionInfo "2023-04-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -238,6 +238,17 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.ob
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/iao.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0010000> "has axiom label"@en)
 
+# Annotation Property: <http://purl.org/dc/elements/1.1/creator> (Creator)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/creator> "Examples of a Creator include a person, an organisation,
+         or a service.  Typically, the name of a Creator should 
+         be used to indicate the entity."@en-us)
+AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/creator> "An entity primarily responsible for making the content 
+         of the resource."@en-us)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1/>)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/creator> "Creator"@en-us)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/creator> "Creator")
+
 # Annotation Property: <http://purl.org/dc/elements/1.1/date> (Date)
 
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/date> "Typically, Date will be associated with the creation or
@@ -249,6 +260,16 @@ AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/date> "A date 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/elements/1.1/>)
 AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/date> "Date"@en-us)
 AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/date> "Date")
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/description> (Description)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/description> "Description may include but is not limited to: an abstract,
+         table of contents, reference to a graphical representation
+         of content or a free-text account of the content."@en-us)
+AnnotationAssertion(rdfs:comment <http://purl.org/dc/elements/1.1/description> "An account of the content of the resource."@en-us)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/>)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/description> "Description"@en-us)
+AnnotationAssertion(rdfs:label <http://purl.org/dc/elements/1.1/description> "Description")
 
 # Annotation Property: <http://purl.org/dc/terms/license> (<http://purl.org/dc/terms/license>)
 

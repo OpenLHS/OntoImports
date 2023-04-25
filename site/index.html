@@ -219,9 +219,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         Getting started
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    Imports
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -499,6 +537,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#imports" class="md-nav__link">
+    Imports
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -519,6 +579,260 @@
 <h1 id="ontoimports-ontology-documentation">ONTOIMPORTS Ontology Documentation</h1>
 <p>Welcome to the ONTOIMPORTS documentation!</p>
 <p>You can find descriptions of the standard ontology engineering workflows <a href="odk-workflows/">here</a>.</p>
+<h2 id="imports">Imports</h2>
+<p>Imports are subsets of external ontologies that contain terms and axioms you would like to re-use in your ontology. These are considered "external", like dependencies in software development, and are not included in your "base" product, which is the <a href="https://github.com/INCATools/ontology-development-kit/blob/master/docs/ReleaseArtefacts.md">release artefact</a> which contains only those axioms that you personally maintain.</p>
+<p>These are the current imports in ONTOIMPORTS</p>
+<table>
+<thead>
+<tr>
+<th>Import</th>
+<th>URL</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bfo</td>
+<td>http://purl.obolibrary.org/obo/bfo.owl</td>
+<td>mirror</td>
+</tr>
+<tr>
+<td>ro</td>
+<td>http://purl.obolibrary.org/obo/ro.owl</td>
+<td>None</td>
+</tr>
+<tr>
+<td>obi</td>
+<td>http://purl.obolibrary.org/obo/obi.owl</td>
+<td>None</td>
+</tr>
+<tr>
+<td>iao</td>
+<td>http://purl.obolibrary.org/obo/iao.owl</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h2 id="classes">Classes</h2>
+<p>These are the external classes included in ONTOIMPORTS</p>
+<table>
+<thead>
+<tr>
+<th>IRI</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000002</td>
+<td>continuant</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000144</td>
+<td>process profile</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000035</td>
+<td>process boundary</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000003</td>
+<td>occurrent</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000148</td>
+<td>zero-dimensional temporal region</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000026</td>
+<td>one-dimensional spatial region</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000008</td>
+<td>temporal region</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000141</td>
+<td>immaterial entity</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000001</td>
+<td>entity</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000034</td>
+<td>function</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000024</td>
+<td>fiat object part</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000006</td>
+<td>spatial region</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000016</td>
+<td>disposition</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000038</td>
+<td>one-dimensional temporal region</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000028</td>
+<td>three-dimensional spatial region</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000140</td>
+<td>continuant fiat boundary</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000031</td>
+<td>generically dependent continuant</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000029</td>
+<td>site</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000019</td>
+<td>quality</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000147</td>
+<td>zero-dimensional continuant fiat boundary</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000040</td>
+<td>material entity</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000023</td>
+<td>role</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000182</td>
+<td>history</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000027</td>
+<td>object aggregate</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000017</td>
+<td>realizable entity</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000011</td>
+<td>spatiotemporal region</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000009</td>
+<td>two-dimensional spatial region</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000145</td>
+<td>relational quality</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000142</td>
+<td>one-dimensional continuant fiat boundary</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000030</td>
+<td>object</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000020</td>
+<td>specifically dependent continuant</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000004</td>
+<td>independent continuant</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000015</td>
+<td>process</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000018</td>
+<td>zero-dimensional spatial region</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/BFO_0000146</td>
+<td>two-dimensional continuant fiat boundary</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0000578</td>
+<td>centrally registered identifier</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0000310</td>
+<td>document</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0000007</td>
+<td>action specification</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0020000</td>
+<td>identifier</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0000033</td>
+<td>directive information entity</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0000005</td>
+<td>objective specification</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0000027</td>
+<td>data item</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0000030</td>
+<td>information content entity</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0020010</td>
+<td>identifier creating process</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/IAO_0000104</td>
+<td>plan specification</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/OBI_0000011</td>
+<td>planned process</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/OBI_0100026</td>
+<td>organism</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/NCBITaxon_2</td>
+<td>Bacteria</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/NCBITaxon_10239</td>
+<td>Viruses</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/NCBITaxon_9606</td>
+<td>Homo sapiens</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/NCBITaxon_2157</td>
+<td>Archaea</td>
+</tr>
+<tr>
+<td>http://purl.obolibrary.org/obo/NCBITaxon_2759</td>
+<td>Eukaryota</td>
+</tr>
+</tbody>
+</table>
 
 
 
