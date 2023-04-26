@@ -83,29 +83,33 @@ These are the external classes included in ONTOIMPORTS
 ## Object properties
 
 These are the external object proerties included in ONTOIMPORTS
-
-|IRI                                           |value                                    |
-|----------------------------------------------|-----------------------------------------|
-|http://purl.obolibrary.org/obo/BFO_0000066    |occurs in                                |
-|http://purl.obolibrary.org/obo/RO_0002353     |output of                                |
-|http://purl.obolibrary.org/obo/RO_0000087     |has role                                 |
-|http://purl.obolibrary.org/obo/RO_0000059     |concretizes                              |
-|http://purl.obolibrary.org/obo/RO_0000081     |role of                                  |
-|http://purl.obolibrary.org/obo/RO_0000058     |is concretized as                        |
-|http://purl.obolibrary.org/obo/RO_0002352     |input of                                 |
-|http://purl.obolibrary.org/obo/RO_0002233     |has input                                |
-|http://purl.obolibrary.org/obo/BFO_0000051    |has part                                 |
-|http://purl.obolibrary.org/obo/BFO_0000067    |contains process                         |
-|http://purl.obolibrary.org/obo/RO_0000057     |has participant                          |
-|http://purl.obolibrary.org/obo/BFO_0000055    |realizes                                 |
-|http://purl.obolibrary.org/obo/RO_0002234     |has output                               |
-|http://purl.obolibrary.org/obo/BFO_0000050    |part of                                  |
-|http://purl.obolibrary.org/obo/RO_0000056     |participates in                          |
-|http://purl.obolibrary.org/obo/BFO_0000054    |realized in                              |
-|http://purl.obolibrary.org/obo/IAO_0000142    |mentions                                 |
-|http://purl.obolibrary.org/obo/IAO_0000143    |mentioned by                             |
-|http://purl.obolibrary.org/obo/OBI_0000299    |has_specified_output                     |
-|http://purl.obolibrary.org/obo/IAO_0000235    |denoted by                               |
-|http://purl.obolibrary.org/obo/IAO_0000219    |denotes                                  |
-|http://purl.obolibrary.org/obo/IAO_0000136    |is about                                 |
-|http://purl.obolibrary.org/obo/OBI_0000312    |is_specified_output_of                   |
+|IRI         |value                                                       |
+|------------|------------------------------------------------------------|
+|http://purl.obolibrary.org/obo/BFO_0000066|occurs in                                                   |
+|http://purl.obolibrary.org/obo/RO_0002018|has component process                                       |
+|http://purl.obolibrary.org/obo/RO_0002353|output of                                                   |
+|http://purl.obolibrary.org/obo/RO_0000087|has role                                                    |
+|http://purl.obolibrary.org/obo/RO_0000059|concretizes                                                 |
+|http://purl.obolibrary.org/obo/RO_0000081|role of                                                     |
+|http://purl.obolibrary.org/obo/RO_0002180|has component                                               |
+|http://purl.obolibrary.org/obo/RO_0000058|is concretized as                                           |
+|http://purl.obolibrary.org/obo/RO_0002352|input of                                                    |
+|http://purl.obolibrary.org/obo/RO_0002350|member of                                                   |
+|http://purl.obolibrary.org/obo/RO_0002233|has input                                                   |
+|http://purl.obolibrary.org/obo/BFO_0000051|has part                                                    |
+|http://purl.obolibrary.org/obo/BFO_0000067|contains process                                            |
+|http://purl.obolibrary.org/obo/RO_0000057|has participant                                             |
+|http://purl.obolibrary.org/obo/RO_0002351|has member                                                  |
+|http://purl.obolibrary.org/obo/BFO_0000055|realizes                                                    |
+|http://purl.obolibrary.org/obo/RO_0002234|has output                                                  |
+|http://purl.obolibrary.org/obo/BFO_0000050|part of                                                     |
+|http://purl.obolibrary.org/obo/RO_0000056|participates in                                             |
+|http://purl.obolibrary.org/obo/BFO_0000054|realized in                                                 |
+|http://purl.obolibrary.org/obo/RO_0002479|has part that occurs in                                     |
+|http://purl.obolibrary.org/obo/IAO_0000142|mentions                                                    |
+|http://purl.obolibrary.org/obo/IAO_0000143|mentioned by                                                |
+|http://purl.obolibrary.org/obo/OBI_0000299|has_specified_output                                        |
+|http://purl.obolibrary.org/obo/IAO_0000235|denoted by                                                  |
+|http://purl.obolibrary.org/obo/IAO_0000219|denotes                                                     |
+|http://purl.obolibrary.org/obo/IAO_0000136|is about                                                    |
+|http://purl.obolibrary.org/obo/OBI_0000312|is_specified_output_of                                      |
