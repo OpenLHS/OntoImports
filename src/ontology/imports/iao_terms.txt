@@ -16,6 +16,9 @@ IAO:0000578	# CRID
 BFO:0000015	# Process
 OBI:0000011	# Planned process
 IAO:0020010	# identifier creating process
+IAO:0000300	# textual entity
+IAO:0000646	# postal code
+IAO:0000422	# postal address
 #
 #Object properties
 #
