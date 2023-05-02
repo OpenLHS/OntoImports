@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/OntoImports/imports/iao_import.owl>
-<http://purl.obolibrary.org/obo/OntoImports/releases/2023-04-26/imports/iao_import.owl>
+<http://purl.obolibrary.org/obo/OntoImports/releases/2023-05-02/imports/iao_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl>)
-Annotation(owl:versionInfo "2023-04-26")
+Annotation(owl:versionInfo "2023-05-02")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -22,8 +22,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000310>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000422>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000578>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000646>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
@@ -583,6 +586,19 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> <http://purl.obolibrary.
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000005>))
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000007>))
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000300> (textual entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000300> "textual entity"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000300> "Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000123>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000300> "A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000300> "AR, (IAO call 2009-09-01): a document as a whole is not typically a textual entity, because it has pictures in it - rather there are parts of it that are textual entities. Examples: The title, paragraph 2 sentence 7, etc."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000300> "MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000300> "PERSON: Lawrence Hunter"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/IAO_0000300> "text"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000300> "textual entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000310> (document)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000310> "document"@en)
@@ -592,6 +608,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000310> "PERSON: Lawrence Hunter"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000310> "document"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000422> (postal address)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000422> <http://purl.obolibrary.org/obo/IAO_0000123>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000422> "A textual entity that is used as directive to deliver something to a person, or organization")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000422> "2010-05-24 Alan Ruttenberg. Use label for the string representation. See issue https://github.com/information-artifact-ontology/IAO/issues/59")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000422> "postal address"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000422> <http://purl.obolibrary.org/obo/IAO_0000300>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000578> (centrally registered identifier)
 
@@ -610,6 +634,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000578> "centrally registered identifier"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000578> <http://purl.obolibrary.org/obo/IAO_0020000>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000578> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000030>))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000646> (postal code)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000646> "An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000646> "Mathias Brochhausen"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000646> "postal code"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000646> <http://purl.obolibrary.org/obo/IAO_0020000>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0020000> (identifier)
 
