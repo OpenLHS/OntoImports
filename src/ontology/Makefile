@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bfo ro obi iao
+IMPORTS =  bfo ro obi iao omrse
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -379,6 +379,15 @@ mirror-obi: | $(TMPDIR)
 mirror-iao: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/iao.owl --create-dirs -o $(MIRRORDIR)/iao.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/iao.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: omrse
+.PHONY: mirror-omrse
+.PRECIOUS: $(MIRRORDIR)/omrse.owl
+mirror-omrse: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/omrse.owl --create-dirs -o $(MIRRORDIR)/omrse.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/omrse.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

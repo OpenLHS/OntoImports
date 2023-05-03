@@ -14,13 +14,13 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/OntoImports.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OntoImports/releases/2023-05-02/OntoImports.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/OntoImports/releases/2023-05-03/OntoImports.owl"/>
         <dc:creator xml:lang="en">Paul Fabry</dc:creator>
         <terms:description xml:lang="en">This ontology only includes only classes and properties from external ontologies such as BFO, IAO, OBI, etc.
 No classes, properties, individuals or axioms should be created on this ontology.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>External imports ontology</terms:title>
-        <owl:versionInfo>2023-05-02</owl:versionInfo>
+        <owl:versionInfo>2023-05-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -176,6 +176,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
         <rdfs:label xml:lang="en">term editor</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -3136,6 +3138,87 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about some person and whether that person identifies as some particular aspect of social identity—such as a gender, an ethnicity, a race, or a sexual orientation—where the sense of identifying may correspond to either (i) an aspect of one’s cognitive representation of oneself, (ii) how one prefers to be regarded by others within some social context, or (iii) how one chooses to present oneself to others within some social context.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">We include (i)-(iii) to acknowledge that there are different senses of &quot;identify&quot; that are relevant here, and that we may not always be sure which sense the person concretizing the social identity information content entity intended. While (i) concerns how one thinks of oneself, (ii) and (iii) are more focused on one&apos;s interactions with others. Importantly, some choose not to share with others how they identify in the sense of (i). For example, one can consider oneself to be some certain gender without either wanting others to know or choosing to present oneself in a corresponding way. We distinguish (ii) and (iii) because one can prefer to be regarded some certain way without attempting to present oneself in any corresponding way.</rdfs:comment>
+        <rdfs:label xml:lang="en">social identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000209 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000204"/>
+        <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">gender identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000210 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000210">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000209"/>
+        <obo:IAO_0000115 xml:lang="en">A gender identity information content entity that is about some person&apos;s identifying as female in gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">female gender identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000209"/>
+        <obo:IAO_0000115 xml:lang="en">A gender identity information content entity that is about some person&apos;s identifying as male in gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">male gender identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000209"/>
+        <obo:IAO_0000115 xml:lang="en">A gender identity information content entity that is about some person&apos;s identifying as non-binary in gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">non-binary identity information content entity</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
