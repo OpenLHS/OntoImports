@@ -13,6 +13,7 @@ Import(<http://purl.obolibrary.org/obo/OntoImports/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/OntoImports/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/OntoImports/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/OntoImports/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/OntoImports/releases/2023-05-03/imports/omrse_import.owl>)
 Annotation(dce:creator "Paul Fabry"@en)
 Annotation(dcterms:description "This ontology only includes only classes and properties from external ontologies such as BFO, IAO, OBI, etc.
 No classes, properties, individuals or axioms should be created on this ontology."@en)
