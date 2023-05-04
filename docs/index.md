@@ -17,6 +17,7 @@ These are the current imports in ONTOIMPORTS
 | ro | http://purl.obolibrary.org/obo/ro.owl | None |
 | obi | http://purl.obolibrary.org/obo/obi.owl | None |
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |
+| omrse | http://purl.obolibrary.org/obo/omrse.owl | None |
 
 
 
