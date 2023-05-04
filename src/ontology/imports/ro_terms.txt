@@ -1,3 +1,12 @@
+#Classes
+#
+BFO:0000001	# Entity
+BFO:0000003	# Occurent
+BFO:0000002	# Continuant
+BFO:0000004	# independent continuant
+BFO:0000015	# Process
+BFO:0000040	# Material entity
+#
 #Properties
 #
 BFO:0000050	# part of
@@ -29,3 +38,25 @@ RO:0002351	# has member
 RO:0002350	# member of
 RO:0002180	# has component
 RO:0002018	# has component process
+RO:0002222	# temporally related to
+RO:0002081	# before or simultaneous with
+RO:0002083	# before
+RO:0002082	# simultaneous with
+RO:0002084	# during which ends
+RO:0002088	# during which starts
+RO:0002085	# encompasses
+RO:0002229	# ends
+RO:0002086	# ends after
+RO:0002087	# immediately preceded by
+RO:0002093	# ends during
+RO:0002092	# happens during
+RO:0002230	# ends with
+RO:0002090	# immediately precedes
+RO:0002087	# immediately preceded by
+RO:0002223	# starts
+RO:0002089	# starts before
+RO:0002091	# starts during
+RO:0002092	# happens during
+RO:0002224	# starts with
+BFO:0000062	# preceded by
+BFO:0000063	# precedes
