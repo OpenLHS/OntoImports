@@ -7,16 +7,21 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/OntoImports/imports/omrse_import.owl>
-<http://purl.obolibrary.org/obo/OntoImports/releases/2023-05-03/imports/omrse_import.owl>
+<http://purl.obolibrary.org/obo/OntoImports/releases/2023-05-04/imports/omrse_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omrse/releases/2022-12-21/omrse.owl>)
-Annotation(owl:versionInfo "2023-05-03")
+Annotation(owl:versionInfo "2023-05-04")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000062>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000204>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000209>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000210>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000211>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000212>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
@@ -24,6 +29,12 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000232>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000601>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
@@ -31,6 +42,19 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 ############################
 #   Annotation Properties
 ############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000179> (BFO OWL specification label)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000179> "Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/BFO_0000179> "Really of interest to developers only"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000179> "BFO OWL specification label"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000180> (BFO CLIF specification label)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000180> "Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/BFO_0000180> "Person:Alan Ruttenberg")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/BFO_0000180> "Really of interest to developers only"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000180> "BFO CLIF specification label"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000111> (editor preferred term)
 
@@ -128,6 +152,53 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/iao.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "definition source"@en)
 
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000412> (imported from)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000412> "imported from"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000412> "For external terms/classes, the ontology from which the term was imported"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000412> "PERSON:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000412> "PERSON:Melanie Courtot"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000412> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000412> "imported from"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000600> (elucidation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000600> "elucidation"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000600> "person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000600> "Person:Barry Smith"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/IAO_0000600> "Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000600> "elucidation"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000601> (has associated axiom(nl))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000601> "has associated axiom(nl)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000601> "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000601> "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/IAO_0000601> "An axiom associated with a term expressed using natural language"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000601> "has associated axiom(nl)"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000602> (has associated axiom(fol))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000602> "has associated axiom(fol)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000602> "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000602> "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/IAO_0000602> "An axiom expressed in first order logic using CLIF syntax"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000602> "has associated axiom(fol)"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (has axiom label)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0010000> "has axiom id"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0010000> "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0010000> "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/IAO_0010000> "A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0010000> "has axiom label"@en)
+
 # Annotation Property: rdfs:label (label)
 
 AnnotationAssertion(rdfs:label rdfs:label "label")
@@ -137,6 +208,37 @@ AnnotationAssertion(rdfs:label rdfs:label "label")
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000040> "material")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000040> "MaterialEntity")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a flame"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a forest fire"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a human being"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a hurricane"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a photon"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a puff of smoke"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a sea wave"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a tornado"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "an aggregate of human beings."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "an energy wave"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "an epidemic"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "the undetached arm of a human being"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040> "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000040> "BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000040> "BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000040> "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/ido.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/019-002>) <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000040> "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/020-002>) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000040> "Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/021-002>) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000040> "every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/019-002>) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000040> "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] ")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/021-002>) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000040> "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] ")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/020-002>) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000040> "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] ")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
 
@@ -151,6 +253,23 @@ Previous. An information content entity is a non-realizable information entity t
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000030> "PERSON: Chris Stoeckert"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000030> "OBI_0000142"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000061> (architectural structure)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000061> "A material entity that is a human made strcuture with firm connection between its foundation and the ground."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000061> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OMRSE_00000061> "http://de.wikipedia.org/wiki/Bauwerk"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000061> "\"Building\" is a subclass of this. "@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000061> "This type of entity is referred to as \"Bauwerk\" or \"Bauliche Anlage\"."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000061> "architectural structure"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000061> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000062> (facility)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000062> "An architectural structure that bears some function."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000062> "Mathias Brochhausen"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000062> "facility"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000062> <http://purl.obolibrary.org/obo/OMRSE_00000061>)
 
 # Class: <http://purl.obolibrary.org/obo/OMRSE_00000204> (social identity information content entity)
 
